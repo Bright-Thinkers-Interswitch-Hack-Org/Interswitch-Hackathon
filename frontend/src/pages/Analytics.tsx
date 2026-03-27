@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Home as HomeIcon, Utensils, Car, ShoppingBag, MonitorPlay, Loader2 } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
@@ -44,6 +45,7 @@ const fmt = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n);
 
 const Analytics = () => {
+  const navigate = useNavigate();
   const [period, setPeriod] = useState<"6M" | "1Y">("6M");
 
   const { data: spendingData, isLoading: spendingLoading } = useQuery({
@@ -213,7 +215,7 @@ const Analytics = () => {
           </div>
         </div>
 
-        <Button variant="hero" size="xl" className="w-full mb-6">
+        <Button variant="hero" size="xl" className="w-full mb-6" onClick={() => navigate("/financial-health")}>
           Check Financial health
         </Button>
 

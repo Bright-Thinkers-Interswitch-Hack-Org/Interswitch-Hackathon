@@ -13,6 +13,7 @@ import Budget from "./pages/Budget";
 import Transactions from "./pages/Transactions";
 import Insights from "./pages/Insights";
 import FinancialHealth from "./pages/FinancialHealth";
+import SplashScreen from "./pages/SplashScreen";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,7 +33,8 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Onboarding />} />
+            <Route path="/" element={<SplashScreen />} />
+            <Route path="/onboarding" element={<Onboarding />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
