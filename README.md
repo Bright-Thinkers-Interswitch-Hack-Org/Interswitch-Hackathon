@@ -245,13 +245,20 @@ All authenticated endpoints require the header: `Authorization: Bearer <token>`
 - Developed the responsive mobile-first layout and navigation patterns
 - Designed the data visualization components (charts, progress bars, health score indicators)
 
-### [Team Member 3] -- [Role]
 
-- [Contributions to be documented]
+### Nwaiwu Chiamaka Victoria -- Product Designer
 
-### [Team Member 4] -- [Role]
+- Co-designed the user interface and visual experience for the Spendlex application
+- Contributed to the design system, component styling, and interaction patterns
+- Collaborated on screen designs for onboarding, dashboard, and financial health views
+- Ensured visual consistency and brand alignment across all application screens
 
-- [Contributions to be documented]
+### Ohale Silver Chioma -- Product Manager
+
+- Defined the product vision, roadmap, and feature prioritization for Spendlex
+- Conducted user research and identified key pain points in personal financial management
+- Coordinated cross-functional collaboration between design and development teams
+- Managed project timelines, deliverables, and stakeholder communication for the hackathon
 
 ---
 
